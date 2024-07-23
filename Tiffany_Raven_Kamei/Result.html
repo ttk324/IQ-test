@@ -1,0 +1,16 @@
+{{ extends 'global/Page.html' }}
+{{ block title }}結果{{ endblock }}
+
+{{ block content }}
+
+<p>
+    正解の数：{{correctanswer}}問<br>
+    不正解の数：{{wronganswer}}問<br>
+    <br>
+    報酬＝１０円×正解の数－２円×不正解の数<br><br>
+    あなたの獲得金額：<b>{{mypayoff}}円</b><br>
+</p>
+
+{{ next_button }}
+
+{{ endblock }}
